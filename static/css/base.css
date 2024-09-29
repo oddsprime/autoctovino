@@ -1,0 +1,410 @@
+@font-face {
+  font-family: "BookAntiqua";
+  src: url("/static/fonts/bookantiqua/BookAntiqua-Regular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "BookAntiqua";
+  src: url("/static/fonts/bookantiqua/BookAntiqua-Bold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 700;
+}
+
+html,
+body {
+  font-family: 'Heebo', sans-serif;
+}
+
+input[name="hp"] {
+  position: absolute;
+  left: -999999px;
+}
+
+.abs-message {
+  position: absolute;
+  display: none;
+  width: 100%;
+  left: 0;
+  right: 0;
+  bottom: 40%;
+  z-index: 2000;
+  text-align: center;
+}
+
+.abs-message h3 {
+  font-weight: bold;
+  margin: 0;
+}
+
+.abs-message h3.success {
+  color: #8BC34A;
+}
+
+.abs-message h3.error {
+  color: #f44732;
+}
+
+.font-book {
+  font-family: "BookAntiqua";
+}
+
+.font-300 {
+  font-weight: 300;
+}
+
+.font-400 {
+  font-weight: 400;
+}
+
+.font-500 {
+  font-weight: 500;
+}
+
+.fs-15 {
+  font-size: 15px;
+}
+
+.btn-yellow {
+  background-color: #ebca58;
+  color: #fff;
+}
+
+.banner-search {
+  padding-top: 50px;
+}
+
+.banner-search #index-search-select {
+  flex-basis: 21%;
+  max-width: 21%;
+}
+
+@media only screen and (max-width: 767px) {
+  .banner-search-select input[type="text"] {
+    border-radius: 0.3rem 0 0 0 !important;
+  }
+
+  .banner-search-select #index-search-select {
+    flex-basis: 50%;
+    max-width: 50%;
+    border-radius: 0 0.3rem 0 0 !important;
+  }
+
+  .banner-search-select .input-group-append {
+    flex-basis: 100%;
+    margin: 0;
+  }
+
+  .banner-search-select .input-group-append button {
+    width: 100%;
+    border-radius: 0 0 0.3rem 0.3rem !important;
+  }
+}
+
+.g-country {
+  font-weight: 300;
+  color: #646464;
+  font-size: 15px;
+}
+
+.distr-wr {
+  border: 1px solid #e1e1e1;
+  padding: 10px 15px;
+}
+
+.distr-wr a {
+  color: inherit;
+}
+
+.badge-type {
+  color: #fff;
+  background: #d7d7d7;
+  text-transform: uppercase;
+  font-size: 12px;
+  padding: 1px 4px;
+  font-weight: 500;
+  vertical-align: middle;
+}
+
+.badge-rare {
+  color: #fff;
+  background: #d7d7d7;
+  text-transform: uppercase;
+  font-size: 12px;
+  padding: 1px 4px;
+  font-weight: 500;
+  vertical-align: middle;
+  background: #0f0150;
+}
+
+.badge-widespread {
+  color: #fff;
+  background: #d7d7d7;
+  text-transform: uppercase;
+  font-size: 12px;
+  padding: 1px 4px;
+  font-weight: 500;
+  vertical-align: middle;
+  background: #504400;
+}
+
+.co-link {
+  color: #000 !important;
+}
+
+.alphabet {
+  padding: 5px 0;
+  border-top: 1px solid #e1e1e1;
+  border-bottom: 1px solid #e1e1e1;
+  font-family: "BookAntiqua";
+  font-size: 20px;
+}
+
+@media only screen and (max-width: 767px) {
+  .alphabet {
+    overflow-x: auto;
+  }
+}
+
+.alphabet a {
+  color: #000;
+  text-decoration: none !important;
+}
+
+.alphabet a:hover,
+.alphabet a.active {
+  color: #ebca58;
+}
+
+@media only screen and (max-width: 767px) {
+
+  .alphabet a,
+  .alphabet span {
+    padding: 0 3px;
+  }
+}
+
+.redactor-wr {
+  overflow: hidden;
+}
+
+.redactor-wr img {
+  max-width: 100%;
+}
+
+section.topban {
+  background: url('../img/topban.jpg') no-repeat center top;
+  background-size: cover;
+  padding-top: 40px;
+  color: #fff;
+}
+
+section.topban #navi a {
+  color: #fff;
+}
+
+section.topban #navi .soc {
+  margin: 0 6px;
+}
+
+section.topban #navi .soc .fa {
+  font-size: 20px;
+}
+
+section.topban .tmenu li {
+  display: inline-block;
+  margin-left: 20px;
+}
+
+section.topban .tb-autoctovin-wr {
+  padding: 30px 0;
+}
+
+@media only screen and (min-width: 768px) {
+  section.topban .tb-autoctovin-wr {
+    padding: 60px 0;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  section.topban .tb-autoctovin-wr {
+    padding: 100px 0;
+  }
+}
+
+section.topban .tb-autoctovin-wr h1 {
+  font-family: "BookAntiqua";
+}
+
+footer.footer {
+  background: #252525;
+  text-align: center;
+  padding: 60px 0;
+  color: #fff;
+}
+
+footer.footer a {
+  color: #fff;
+}
+
+footer.footer .soc {
+  margin: 0 6px;
+}
+
+footer.footer .fa {
+  font-size: 20px;
+}
+
+.page-index .view-wr {
+  border: 1px solid #ebca58;
+}
+
+.page-index .view-wr .w-link {
+  display: block;
+  background: #fff;
+  color: #000;
+  text-align: center;
+  padding: 10px 3px;
+  text-decoration: none !important;
+}
+
+.page-index .view-wr .w-link.active {
+  background: #ebca58;
+  color: #fff;
+}
+
+.page-index .view-wr .w-link:not(.active):hover {
+  background: #f6e7b3;
+}
+
+#banner-index {
+  padding-bottom: 200px;
+}
+
+#page-grape-detail .box-wr,
+#page-producer-detail .box-wr,
+#page-country-distributors-detail .box-wr {
+  border: 1px solid #ebebeb;
+  padding: 15px;
+}
+
+#page-grape-detail .descr,
+#page-producer-detail .descr,
+#page-country-distributors-detail .descr {
+  font-size: 17px;
+  line-height: 27px;
+}
+
+#page-grape-detail .cg-wr,
+#page-producer-detail .cg-wr,
+#page-country-distributors-detail .cg-wr {
+  background: #f6f5f5;
+  padding: 10px;
+}
+
+#page-grape-detail .btn-vp,
+#page-producer-detail .btn-vp,
+#page-country-distributors-detail .btn-vp {
+  border-radius: 15px;
+}
+
+#page-grape-detail .black-link,
+#page-producer-detail .black-link,
+#page-country-distributors-detail .black-link {
+  color: #000 !important;
+}
+
+#page-grape-detail .attr-wr,
+#page-producer-detail .attr-wr,
+#page-country-distributors-detail .attr-wr {
+  width: 40px;
+  text-align: center;
+}
+
+#page-grape-detail .attr-wr img,
+#page-producer-detail .attr-wr img,
+#page-country-distributors-detail .attr-wr img {
+  max-width: 100%;
+}
+
+#page-grape-detail .icon-wr,
+#page-producer-detail .icon-wr,
+#page-country-distributors-detail .icon-wr {
+  width: 27px;
+}
+
+#page-grape-detail .cont,
+#page-producer-detail .cont,
+#page-country-distributors-detail .cont {
+  font-size: 19px;
+  word-break: break-all;
+}
+
+#page-grape-detail #map,
+#page-producer-detail #map,
+#page-country-distributors-detail #map {
+  width: 100%;
+  height: 500px;
+}
+
+#page-distributors-list .distr-wr {
+  margin-bottom: 10px;
+  margin-left: 26px;
+}
+
+#page-contact .form-wr {
+  border: 1px solid #d6e1e5;
+  border-radius: 2px;
+  padding: 15px;
+  box-shadow: 0 6px #f2f2f2;
+}
+
+#page-contact .form-wr label {
+  font-weight: 300;
+  color: #989898;
+  margin: 0;
+}
+
+#page-contact .form-wr .form-control {
+  border-color: #d6e1e5;
+  border-radius: 2px;
+}
+
+#page-contact .form-wr .btn-success {
+  border-radius: 0;
+  background: #007236;
+}
+
+#blog-list .entry-box {
+  color: #212121;
+}
+
+@media only screen and (max-width: 991px) {
+  #blog-list .entry-box:not(:last-child) {
+    border-bottom: 1px solid #dee2e6;
+  }
+}
+
+#blog-list .entry-box .he a {
+  color: inherit;
+}
+
+#blog-entry .cname {
+  font-weight: 400;
+}
+
+.blog-side h5 {
+  font-weight: 400;
+  color: #363636;
+}
+
+.blog-side .cats li {
+  margin-bottom: 8px;
+}
+
+.blog-side .cats li a {
+  color: #575757;
+}
+
+
